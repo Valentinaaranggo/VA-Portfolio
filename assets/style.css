@@ -25,6 +25,9 @@ header h1{
     color: ivory;
     
 }
+nav ul li img{
+    max-height: 200px;
+}
 nav ul{
     display: flex; /*lines up the contents in a container*/
     justify-content: space-between; 
@@ -36,9 +39,38 @@ nav ul li{
     font-weight: 200;
 }
 .content{
-    height: 400px;
+    height: 800px;
     background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+
+}
+.card{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color:black;
+    align-items: center;
+    padding: 5% 10%; 
+    border-style:solid;
+    border-width: 4px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 5px #aaaaaa;
     
+}
+.card h2{ 
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--limegreen);
+
+}
+.info{
+    width: 600px;
+    height: 100 px;
+    line-height: 1.5;
+
 }
 
 footer{
