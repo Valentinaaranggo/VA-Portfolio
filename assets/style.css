@@ -10,66 +10,71 @@ body{
     color: ivory;
 }
 
-header{
+.header{
 height: 100px;
 display: flex; /*lines up the header contents in a container*/
 justify-content: space-between; /* puts a space between the contents*/
 background-color: var(--limegreen);
 padding: 10%; 
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: ivory ;
 }
 
-header h1{
+
+.header h1{
     font-size: 45px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    color: ivory;
     
 }
-nav ul li img{
-    max-height: 200px;
-}
-nav ul{
+
+.header nav ul{
     display: flex; /*lines up the contents in a container*/
     justify-content: space-between; 
     min-width: 300px;
 }
-nav ul li{
-    padding: 2%;
+.header nav ul li{
+    padding: 0 2%;
     font-size: 20px;
     font-weight: 200;
-}
-.content{
-    height: 800px;
-    background-color: beige;
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-
-}
-.card{
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    color:black;
-    align-items: center;
-    padding: 5% 10%; 
-    border-style:solid;
-    border-width: 4px;
-    border-radius: 50px;
-    box-shadow: 10px 10px 5px #aaaaaa;
     
 }
-.card h2{ 
+a{
+    color: ivory;
+    text-decoration: none;
+}
+p{
+    font-size: 16px;
+}
+.content{
+    height:1000px;
+    background-color: beige;
+}
+.content-block{
+    padding: 50px;
+    margin-bottom: 20px;
+    color:black;
+
+
+}
+.content-block img{
+    max-height:200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.content-block h2{ 
     font-size: 30px;
     font-weight: bold;
     color: var(--limegreen);
+   text-align: center;
 
 }
 .info{
-    width: 600px;
-    height: 100 px;
     line-height: 1.5;
+    text-align: center;
 
 }
 
