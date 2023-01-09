@@ -1,64 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--organized as the head of the website-->
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
+  <!--reset shet is linked-->
   <link rel="stylesheet" href="./assets/reset.css" />
+  <!--Style sheet is linked-->
   <link rel="stylesheet" href="./assets/style.css" />
 </head>
-
+<!--head end and the body structure begins-->
 <body>
+    <!--header section= top of the page-->
+    <!--class=header is used to point to the class name "header" in a style sheet.-->
     <header class="header">
+         <!--header title-->
         <h1>Valentina Arango</h1>
-        
+        <!--this nav provides structure to the list items located in the header-->
         <nav>
+            <!--unordered list-->
             <ul>
+                <!--list items-->
                 <li>
+                    <!-- this links to about me section on the page when clicked on and lists "About me" in the navigation section-->
                     <a href=#about-me >About me</a>
                 </li>
                 <li>
+                     <!-- this links to work section on the page when clicked on lists "Work" in the navigation section-->
                     <a href=#work>Work</a>
                 </li>
                 <li>
+                     <!-- this links to contact me section on the page when clicked on and lists "Contact me"  in the navigation section-->
                     <a href="#contact-me">Contact me</a>
                 </li>
             </ul>
         </nav>
     </header> 
-    <section class="content">
-        <div id="about-me" class="content-block">
-            <img src="./IMG_5446 (1).jpeg" alt="portfolio picture"class="float-right">
-            <h2>About Me</h2>
-            <p class="info"> My name is Valentina Arango and
+     <!--the main section begins and the header ends-->
+     <main>
+         <!--created a section to provide a more readable html file and more structured-->
+         <!--class=content is used to point to the class name "content" in a style sheet.-->
+        <section class="content">
+             <!--created a div section to provide a more readable html file and more structured-->
+            <!--class=content-block is used to point to the class name "content-block" in a style sheet.-->
+            <!--the id allows the reader to jump to this specific part of the content page-->
+            <div id="about-me" class="content-block">
+                 <!-- img is used to embed an image in the html page, src specifies the path to the image, and alt specifies alternate text for the image, and the class gives it styling -->
+                <img src="./IMG_5446 (1).jpeg" alt="portfolio picture"class="portfolio-picture">
+                <!--header to this section-->
+                <h2>About Me</h2>
+                <!--paragraph below header with a class name info which points to the ".info" in the style.css sheet-->
+                <p class="info"> My name is Valentina Arango and
               I am an aspiring software engineer. I go to Georgia State Universiy 
               and am pursuing a degree in computer science. In my free time I love to play tennis,
                go to the gym, or do anything outdoors.</p>
-        </div>
-        <div id="work"  class="content-block">
-            <h2>Work</h2>
-            <h3>Horiseon-Refactor</h3>
-             <ul class="info">
-                <li>
-                    <a href="https://valentinaaranggo.github.io/Horiseon-Refactor/"> <img src=Screenshot_20221222_041747.png  id="horiseon-image"></a>
-                </li>
-        
-           </ul>
-        </div>
-        <div id="contact-me" class="content-block">
-            <h2>Contact Me</h2>
-            <ul class="info">
-                <li>Email: Valea28@gmail.com</li>
-                <li>Phone Number:6789943838</li>
-            </ul>
-        </div>
-    </section>
-    <section>
-
-    </section>
+            </div>
+             <!--created a div section to provide a more readable html file and more structured-->
+            <!--class=content-block is used to point to the class name "content-block" in a style sheet.-->
+            <!--the id allows the reader to jump to this specific part of the content page -->
+            <div id="work"  class="content-block">
+                <!--header to this section-->
+                <h2>Work</h2>
+                <!--header under work section-->
+                <h3>Horiseon-Refactor</h3>
+                <!--unordered list-->
+                <!--class named info which points to the styling sheet-->
+                <ul class="info">
+                    <!--list items-->
+                    <li>
+                        <!--image with linked embedded to it and the id links it to the styling sheet to give it style-->
+                        <a href="https://valentinaaranggo.github.io/Horiseon-Refactor/"> <img src=Screenshot_20221222_041747.png  id="horiseon-image"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--created a div section to provide a more readable html file and more structured-->
+            <!--class=content-block is used to point to the class name "content-block" in a style sheet.-->
+            <!--the id allows the reader to jump to this specific part of the content page -->
+            <div id="contact-me" class="content-block">
+                <!--header to this section-->
+                <h2>Contact Me</h2>
+                <!--unordered list-->
+                <!--class named info which points to the styling sheet-->
+                <ul class="info">
+                    <!--list items-->
+                    <li>Email: Valea28@gmail.com</li>
+                    <li>Phone Number:6789943838</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!--main section ends and footer begins-->
+    <!--footer section and haven't included any info yet but does have style in the styling sheet-->
     <footer>
-
     </footer>
 </body>
 </html>
