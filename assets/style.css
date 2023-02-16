@@ -15,7 +15,7 @@ body{
 
 .header{
 height: 200px;
-display: flex; /*lines up the header contents in a container*/
+display: flex; /*lines up the  header contents in a container*/
 justify-content: space-between; /* puts a space between the contents*/
 background-color: var(--sage-green); /* header's background color*/
 padding: 10%;  /* gives the header 10% padding*/
@@ -34,7 +34,7 @@ color:var(--ivory) ;
 
 .header nav ul{
     display: flex; /*lines up the contents in a container*/
-    justify-content: space-between;  
+    justify-content: space-between;  /* adds even space between the contents*/
     min-width: 300px;
 }
 .header nav ul li{
@@ -51,6 +51,11 @@ p{
     font-size: 16px;
     padding-top: 30px;
 }
+.container{
+    display: flex;
+    justify-content: center;
+}
+
 .content{
     height: 1400px;
     background-color: beige;
@@ -104,10 +109,21 @@ p{
 footer{
     height: 200px;
 }
-#horiseon-image{
+.horiseon-image{
     height: 400 px;
     width: auto;
 }
+.info:hover .horiseon-image{
+    opacity: 0.3;
+}
+.info:hover #hikr1-image{
+    opacity: 0.3;
+}
+#hikr1-image{
+    width: 800px;
+    height: 400px;
+}
+
 
 @media screen and (max-width: 768px) {
      /* Use flex-direction to stack the nav, header, and body */
@@ -120,3 +136,4 @@ footer{
     }
     
 }
+
